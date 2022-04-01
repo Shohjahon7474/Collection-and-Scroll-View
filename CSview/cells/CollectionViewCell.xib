@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="CSview" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="131"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="131"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MNq-tF-8cG">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="101"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wBk-Z9-PP3">
+                        <rect key="frame" x="0.0" y="101" width="140" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Macbook pro 13" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bic-Tb-BMP">
+                                <rect key="frame" x="10" y="3" width="120" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Bic-Tb-BMP" secondAttribute="bottom" constant="3" id="4bM-Ri-9hJ"/>
+                            <constraint firstAttribute="height" constant="30" id="GnS-eY-hdI"/>
+                            <constraint firstItem="Bic-Tb-BMP" firstAttribute="top" secondItem="wBk-Z9-PP3" secondAttribute="top" constant="3" id="SDM-rf-ccY"/>
+                            <constraint firstAttribute="trailing" secondItem="Bic-Tb-BMP" secondAttribute="trailing" constant="10" id="YVP-Mr-QHM"/>
+                            <constraint firstItem="Bic-Tb-BMP" firstAttribute="leading" secondItem="wBk-Z9-PP3" secondAttribute="leading" constant="10" id="h3a-NP-NHT"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sFe-Xi-zLp">
+                        <rect key="frame" x="0.0" y="100" width="140" height="1"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="apI-uN-5dS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="MNq-tF-8cG" secondAttribute="bottom" constant="30" id="3dk-wy-D8e"/>
+                <constraint firstItem="wBk-Z9-PP3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="RKM-h6-WrS"/>
+                <constraint firstItem="MNq-tF-8cG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Tbu-mP-tQa"/>
+                <constraint firstItem="sFe-Xi-zLp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WuP-Ik-lzc"/>
+                <constraint firstItem="MNq-tF-8cG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bpo-Hl-v5d"/>
+                <constraint firstAttribute="bottom" secondItem="sFe-Xi-zLp" secondAttribute="bottom" constant="30" id="bvP-K8-z77"/>
+                <constraint firstAttribute="trailing" secondItem="sFe-Xi-zLp" secondAttribute="trailing" id="rlx-NW-8a8"/>
+                <constraint firstAttribute="bottom" secondItem="wBk-Z9-PP3" secondAttribute="bottom" id="ug0-cw-74e"/>
+                <constraint firstAttribute="trailing" secondItem="wBk-Z9-PP3" secondAttribute="trailing" id="wqy-od-hna"/>
+                <constraint firstAttribute="trailing" secondItem="MNq-tF-8cG" secondAttribute="trailing" id="ziw-WN-nDw"/>
+            </constraints>
+            <size key="customSize" width="140" height="131"/>
+            <connections>
+                <outlet property="proimage" destination="MNq-tF-8cG" id="tSj-kI-fS5"/>
+                <outlet property="proname" destination="Bic-Tb-BMP" id="Rkn-7S-WvD"/>
+            </connections>
+            <point key="canvasLocation" x="202.89855072463769" y="67.96875"/>
+        </collectionViewCell>
+    </objects>
+</document>
